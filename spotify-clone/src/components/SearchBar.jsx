@@ -4,24 +4,29 @@ import { useState , useEffect } from "react"
 import Image from "next/image"
 
 export default function Search() {
-    const [ isOpen, setIsOpen ] = useState(true)
+    const [ isOpen, setIsOpen ] = useState(false)
 
     const runSearch = (params) => {
-        
+        return (
+            setIsOpen(!isOpen)
+        )
     }
 
-    return <div>
-        <div className={`fixed top-8 bg-zinc-500 h-12 rounded-[2rem] ${isOpen === true ? "w-64 right-24" : "w-12 right-8"}`}>
-            <button onClick={() => {setIsOpen(!isOpen)}}>
-                <Image src="/search-icon" height={100} width={100} alt="search-icon" className={`m-auto w-8 h-8 ${isOpen === true ? "hidden" : "block"}`}/>
-            </button>
-            <div className={`${isOpen === true ? "block" : "hidden"} flex flex-nowrap justify-evenly my-auto w-60 h-12`}>
-                <input type="text" placeholder="search" className="m-auto bg-transparent w-40 h-12 rounded-[2rem]" />
-                
-            </div>
+
+     
+    return <div className={`flex fixed z-50 top-0 w-screen overflow-x-hidden bg-stone-950 h-24 border-b-2 border-red-700 flex-nowrap justify-between ${isOpen ? "w-[101vw]" : "left-0"}`}>
+                <div className={`relative my-auto ${isOpen ? "left-2 text-xl font-normal" : "left-4 text-3xl font-bold"}`}>
+                    <h1>SoundStream</h1>
+                </div>
+                <div>
+                    <button className="w-12 h-12 fixed my-auto right-3 border-2 border-white bg-stone-700 rounded-[6rem] top-6" onClick={() => {
+                        setIsOpen(!isOpen);
+                        if (isOpen)
+                            runSearch()
+                    }}>
+                        <Image width={100} height={100} src="/images/search.svg" alt="search-button" className="w-12 my-autorounded-[6rem] h-12 object-cover relative my-auto right-3"/>
+                    </button>
+                    <input className={`relative bg-stone-700 h-12 my-auto top-6 -z-10 rounded-[6rem] right-3 ${isOpen ? "animate-search-translate animate-search-width " : "w-12"}`}/>
+                </div>
         </div>
-        <button onClick={runSearch}>
-            <Image src="/search-icon" height={100} width={100} alt="search-icon" className={`w-12 h-12 m-8 m-auto fixed top-0 right-0 border-2 rounded-full ${isOpen === true ? "block" : "hidden"}`}/>
-        </button>
-    </div>
 }
