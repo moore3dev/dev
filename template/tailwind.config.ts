@@ -10,6 +10,7 @@ export default {
     extend: {
       colors: {
         main: "#555555",
+        lighterMain: "#999999",
         text1: "#dcdcdc",
       },
     },
