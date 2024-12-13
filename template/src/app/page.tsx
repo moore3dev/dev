@@ -11,6 +11,11 @@ export default function page() {
         <p className="text-text2 opacity-95">Text</p>
       </div>
     </div>
+    <div className="grid-cols-2 grid text-text2 rounded-xl border-2 border-alternateDark relative top-[5vh] left-[0.5vw] bg-alternate w-[98vw] h-[43vh]">
+      <div className="bg-alternateDark mt-[1vh] rounded-xl h-[35vh] w-[42.5vw] mx-auto"></div>
+      <div className="bg-alternateDark mt-[1vh] rounded-xl h-[35vh] w-[42.5vw] mx-auto"></div>
+      <button className="bg-main w-[25vw] text-text1 ml-[2.75vw] h-[5vh] rounded-3xl">Contact Us</button>
+    </div>
     <Footer />
   </>
 }

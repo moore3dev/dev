@@ -11,8 +11,15 @@ export default function page() {
             <div className="w-[50vw] pl-[10vw] pt-3 flex justify-evenly">
                 <Link href="/">Home</Link>
                 <Link href="/redirect">About</Link>
-                <Link href="/redirect">Services</Link>
-                <Link href="/redirect">Contact</Link>
+                <Link href="/redirect">Services
+                    <select className="ml-1 bg-main">
+                        <option></option>
+                        <option>Service1</option>
+                        <option>Service2</option>
+                        <option>Service3</option>
+                    </select>
+                </Link>
+                <Link className="-ml-2" href="/redirect">Contact</Link>
             </div>
     </nav>
 }
