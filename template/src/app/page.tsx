@@ -15,16 +15,16 @@ export default function page() {
         <p className="text-text2 opacity-95">Text</p>
     </div>
     </div>
-    <div className=" bg-greenGrey text-text2 rounded-xl relative top-[12.5vh] lg:top-[5vh] left-[0.5vw] bg-alternate w-[98vw] h-[45vh]">
+    <div className=" bg-darkGrey text-text2 rounded-xl relative top-[12.5vh] lg:top-[5vh] left-[0.5vw] bg-alternate w-[98vw] h-[45vh]">
       
       <h1 className="text-2xl text-center font-bold text-black">Our Services:</h1>
       
       <div className="grid grid-cols-2 lg:grid-cols-3">
-        <div className="bg-darkGrey mt-[2.5vh] rounded-xl h-[35vh] w-[45vw] lg:w-[30vw] mx-auto">
+        <div className="bg-cream mt-[2.5vh] rounded-xl h-[35vh] w-[45vw] lg:w-[30vw] mx-auto">
           <h2 className="text-center pt-[1vh]">Service we provide</h2>
           <p className="font-light mx-1.5">text related to a service which is provided by electricians for real no cap</p>
         </div>
-        <div className="bg-darkGrey mt-[2.5vh] rounded-xl h-[35vh] w-[45vw] lg:w-[30vw] mx-auto">
+        <div className="bg-cream mt-[2.5vh] rounded-xl h-[35vh] w-[45vw] lg:w-[30vw] mx-auto">
           <h2 className="text-center pt-[1vh]">Service we provide</h2>
           <p className="font-light mx-1.5">text related to a service which is provided by electricians for real no cap</p>
         </div>

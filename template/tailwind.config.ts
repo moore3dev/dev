@@ -18,12 +18,18 @@ export default {
       keyframes: {
         comeDown: {
           "0%":  {
-            background: "#000000",
-            opacity: "0"
+            opacity: "0",
+            "z-index": "-100",
           },
-          "10%": {opacity: "1"},
+          "1%": { 
+            opacity: "1",
+          },
+          "90%" : {
+            "z-index": "-100",
+          },
           "100%": {
-            background: "#ffffff",
+            opacity : "1",
+            "z-index": "40",
           }
         }
       },
