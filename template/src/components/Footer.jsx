@@ -2,24 +2,22 @@ import Image from "next/image"
 import Link from "next/link"
 
 export default function Footer() {
-    return <div className="w-[100vw] bg-gradient-to-t h-[10vh] opacity-100 from-main z-50 to-lighterMain from-70% flex py-2 justify-evenly text-text1 flex-nowrap relative top-[10vh]">
-        <div className="flex w-[80vw] pl-[4vw]">
+    return <div className="w-[100vw] bg-gradient-to-t h-[10vh] opacity-100 from-greenGrey z-50 to-black from-85% flex py-2 justify-evenly text-text1 flex-nowrap relative top-[15vh] lg:top-[10vh]">
+        <div className="flex lg:w-[80vw] w-[60vw] pl-[4vw]">
             <Image src="/file.svg" width={100} height={100} alt="Logo" className="rounded-xl border-2 border-white w-[7.5vh] h-[7.5vh] object-cover"/>
-            <p className="pl-[1vw] relative top-[4vh] text-left h-[2vh] font-bold text-xl" >Business Name</p>
+            <p className="pl-[1vw] lg:block hidden relative top-[4vh] text-left h-[2vh] font-bold text-xl" >Business Name</p>
             <div className="mx-auto h-[100%] justify-evenly w-[25vw] flex">
                 <Link href="/redirect">
-                    <Image src="file.svg" className="h-[7.5vh] rounded-3xl border-2 border-white w-[7.5vh]" width={100} height={100} alt="LinkedIn"/>
+                    <Image src="/logos/facebook.svg" className="h-[7.5vh] rounded-3xl w-[7.5vh]" width={100} height={100} alt="Facebook"/>
                 </Link>
                 <Link href="/redirect">
-                    <Image src="file.svg" className="h-[7.5vh] rounded-3xl border-2 border-white w-[7.5vh]" width={100} height={100} alt="Facebook"/>
-                </Link>
-                <Link href="/redirect">
-                    <Image src="file.svg" className="h-[7.5vh] rounded-3xl border-2 border-white w-[7.5vh]" width={100} height={100} alt="Instagram"/>
+                    <Image src="/logos/insta.svg" className="h-[7.5vh] rounded-3xl w-[7.5vh]" width={100} height={100} alt="Instagram"/>
                 </Link>
             </div>
         </div>  
-        <div className="w-[20vw] flex flex-col justify-between pl-[5vw]">
-            <Link href="/redirect" className="w-[10vw] hover:underline transition-opacity duration-300 hover:opacity-80">Terms of Service</Link>
+        <div className="lg:w-[20vw] w-[40vw] flex flex-col justify-between pl-[5vw]">
+            <Link href="/redirect" className="w-[10vw] hover:underline transition-opacity hidden lg:block duration-300 hover:opacity-80">Terms of Service</Link>
+            <Link href="/redirect" className="w-[10vw] hover:underline transition-opacity lg:hidden duration-300 hover:opacity-80">ToS</Link>
             <p className="relative text-left h-[2vh] font-light text-sm" >By Finley Moore</p>
         </div>
     </div>

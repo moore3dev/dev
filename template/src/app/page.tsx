@@ -3,18 +3,36 @@ import Footer from "../components/Footer"
 
 export default function page() {
   return <>
-    <Image src="file.svg" alt="Image1" width={100} height={100} className="bg-white opacity-70 border-2 border-black w-[99vw] h-[90vh] relative top-16"/>
-    <h1 className="relative bottom-[30vh] left-0 text-center font-bold">Title Text</h1>
-    <div className="w-[98vw] grid grid-cols-2 rounded-xl bg-gradient-to-r from-alternate to-alternateDark from-40% border-[3px] border-alternateDarker my-5 relative left-[0.5vw] top-[5vh] h-[50vh]">
-      <Image src="file.svg" width={100} height={100} className="rounded-l-xl bg-blue-950 relative border-2 z-10 opacity-100 object-fit w-[49.5vw] h-[49.2vh]" alt="Image2"/>
-      <div className="w-[49.5vw] h-[49.5vh]">
-        <p className="text-text2 opacity-95">Text</p>
+    <Image src="/ladder.webp" alt="Image1" width={400} height={400} className="bg-black rounded-b-xl md:hidden opacity-40 border-2 border-black w-[100vw] h-[90vh] relative top-16"/>
+    <Image src="/fullScreen.webp" alt="Image1" width={800} height={400} className="bg-black rounded-b-xl hidden md:block grayscale opacity-40 border-2 border-black w-[100vw] h-[90vh] relative top-16"/>
+    <h1 className="relative text-3xl text-yellow-100 bottom-[30vh] left-0 text-center font-extrabold">Business Name</h1>
+    <div className="w-[99vw] grid grid-cols-1 lg:grid-cols-2 rounded-xl lg:bg-darkGrey my-5 relative left-[0.5vw] top-[10vh] lg:top-[5vh] gap-4 lg:gap-0 h-[103vh] lg:h-[50vh]">
+      <div className="lg:w-[49.5vw] lg:hidden rounded-xl bg-darkGrey w-[99vw] text-md h-[49.5vh]">
+          <p className="mt-5 mx-2 font-semibold">Electrician related to being an electrician for rizzle no cap ong no shizzle Electrician related to being an electrician for rizzle no cap ong no shizzle Electrician related to being an electrician for rizzle no cap ong no shizzle Electrician related to being an electrician for rizzle no cap ong no shizzle</p>
       </div>
+      <Image src="file.svg" width={100} height={100} className="lg:rounded-l-xl rounded-xl  bg-white relative z-10 opacity-100 -ml-[0.7px] object-fit w-[100vw] lg:w-[50vw] h-[50vh]" alt="Image2"/>
+      <div className="lg:w-[49.5vw] rounded-xl lg:block hidden bg-darkGrey w-[99vw] h-[49.5vh]">
+        <p className="text-text2 opacity-95">Text</p>
     </div>
-    <div className="grid-cols-2 grid text-text2 rounded-xl border-2 border-alternateDark relative top-[5vh] left-[0.5vw] bg-alternate w-[98vw] h-[43vh]">
-      <div className="bg-alternateDark mt-[1vh] rounded-xl h-[35vh] w-[42.5vw] mx-auto"></div>
-      <div className="bg-alternateDark mt-[1vh] rounded-xl h-[35vh] w-[42.5vw] mx-auto"></div>
-      <button className="bg-main w-[25vw] text-text1 ml-[2.75vw] h-[5vh] rounded-3xl">Contact Us</button>
+    </div>
+    <div className=" bg-greenGrey text-text2 rounded-xl relative top-[12.5vh] lg:top-[5vh] left-[0.5vw] bg-alternate w-[98vw] h-[45vh]">
+      
+      <h1 className="text-2xl text-center font-bold text-black">Our Services:</h1>
+      
+      <div className="grid grid-cols-2 lg:grid-cols-3">
+        <div className="bg-darkGrey mt-[2.5vh] rounded-xl h-[35vh] w-[45vw] lg:w-[30vw] mx-auto">
+          <h2 className="text-center pt-[1vh]">Service we provide</h2>
+          <p className="font-light mx-1.5">text related to a service which is provided by electricians for real no cap</p>
+        </div>
+        <div className="bg-darkGrey mt-[2.5vh] rounded-xl h-[35vh] w-[45vw] lg:w-[30vw] mx-auto">
+          <h2 className="text-center pt-[1vh]">Service we provide</h2>
+          <p className="font-light mx-1.5">text related to a service which is provided by electricians for real no cap</p>
+        </div>
+        <div className="bg-darkGrey hidden lg:block mt-[2.5vh] rounded-xl h-[35vh] w-[45vw] lg:w-[30vw] mx-auto">
+          <h2 className="text-center pt-[1vh]">Service we provide</h2>
+          <p className="font-light mx-1.5">text related to a service which is provided by electricians for real no cap</p>
+        </div>
+      </div>
     </div>
     <Footer />
   </>
